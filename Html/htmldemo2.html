@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+</head>
+
+<body>
+    <frameset rows="20%,*">
+        <frame src="top.html">
+            <frameset aria-colspan="40%,">
+                <frame src=""></frame>
+                <frame src=""></frame>
+            </frameset>
+        </frame>
+    </frameset>
+
+    <body>
+
+        <a href="文字页面.html" target="myframe">默认显示文字页面</a><br>
+        <a href="图片页面.html" target="myframe">点击进入图片页面</a><br>
+        <a href="表格页面.html" target="myframe">点击进入表格页面</a><br>
+
+        <iframe src="文字页面.html" width="400" height="400" name="myframe"></iframe>
+        <br>
+        嘿嘿
+
+    </body>
+
+    <form>
+        姓名：<input placeholder="呵呵">逗比<br>
+        昵称：<input value="哈哈" readonly=""><br>
+        名字：<input type="text" value="name" disabled=""><br>
+        密码：<input type="password" value="pwd" size="50"><br>
+        性别：<input type="radio" name="gender" id="radio1" value="male" checked="">男
+        <input type="radio" name="gender" id="radio2" value="female">女<br>
+        爱好：<input type="checkbox" name="love" value="eat" checked>吃饭
+        <input type="checkbox" name="love" value="sleep">睡觉
+        <input type="checkbox" name="love" value="bat">打豆豆
+    </form>
+
+    <form>
+        <input type="button" value="普通按钮"><br>
+        <input type="submit" value="提交按钮"><br>
+        <input type="reset" value="重置按钮"><br>
+        <input type="image" value="图片按钮1"><br>
+        <input type="image" src="1.jpg" width="800" value="图片按钮2"><br>
+        <input type="file" value="文件选择框">
+    </form>
+
+    <form>
+        <select>
+            <option>小学</option>
+            <option>初中</option>
+            <option>高中</option>
+            <option>大学</option>
+            <option selected="">研究生</option>
+        </select>
+        <br><br><br>
+
+        <select size="3">
+            <option>小学</option>
+            <option>初中</option>
+            <option>高中</option>
+            <option>大学</option>
+            <option>研究生</option>
+        </select>
+        <br><br><br>
+
+        <select multiple="">
+            <option>小学</option>
+            <option>初中</option>
+            <option selected="">高中</option>
+            <option selected="">大学</option>
+            <option>研究生</option>
+        </select>
+        <br><br><br>
+
+    </form>
+
+    <form>
+        <textarea name="txtInfo" rows="4" cols="20">1、不爱摄影不懂设计的程序猿不是一个好的产品经理。</textarea>
+    </form>
+
+    <h5>表单语义化</h5>
+    <form>
+
+        <fieldset>
+            <legend>账号信息</legend>
+            姓名：<input value="呵呵">逗比<br>
+            密码：<input type="password" value="pwd" size="50"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>其他信息</legend>
+            性别：<input type="radio" name="gender" value="male" checked="">男
+            <input type="radio" name="gender" value="female">女<br>
+            爱好：<input type="checkbox" name="love" value="eat">吃饭
+            <input type="checkbox" name="love" value="sleep">睡觉
+            <input type="checkbox" name="love" value="bat">打豆豆
+        </fieldset>
+
+    </form>
+
+    <!-- <embed src="./Maximillian - Losing Game.mp3">Losing Game -->
+    <!-- loop循环播放 -->
+    <!-- <audio src="./Maximillian - Losing Game.mp3" autoplay controls loop> </audio> -->
+    <!--推荐的兼容写法：-->
+    <audio controls loop>
+        <source src="./Maximillian - Losing Game.mp3" />
+        <source src="./Maximillian - Losing Game.ogg" />
+        <source src="./Maximillian - Losing Game.wav"/>
+        抱歉，你的浏览器暂不支持此音频格式
+    </audio>
+    <br>
+	<video src="ive.mp4" controls autoplay width="400" height="300"></video>
+
+
+
+    <!-- <marquee behavior="alternate" direction="down" width="300" height="200" bgcolor="#8c5dc1">我来了</marquee>
+    <marquee behavior="alternate" direction="down" width="300" height="200" bgcolor="#8c5dc1">我走了</marquee> -->
+    <br>
+    <input type="text" list="myData">
+    <datalist id="myData">
+        <option>本科</option>
+        <option>研究生</option>
+        <option>不明</option>
+    </datalist>
+    <br>
+
+
+    <br>
+    <br>
+</body>
+
+</html>
